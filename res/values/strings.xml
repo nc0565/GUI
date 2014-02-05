@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">GUI</string>
+
+    <string name="memory_name">Memory Name</string>
+
+    <string name="location">Location</string>
+
+    <string name="date_year">Date / Year</string>
+
+    <string name="obj_photo_description">This image button starts as a place holder and when triggered will call an intent to the camera to for replacing the image source</string>
+
+</resources>
