@@ -10,4 +10,12 @@
 
     <string name="obj_photo_description">This image button starts as a place holder and when triggered will call an intent to the camera to for replacing the image source</string>
 
+    <string name="playbackBtn">Playback/Review Button</string>
+
+    <string name="recordBtn">Record Button</string>
+
+    <string name="recordingLength">Recording Length</string>
+
+    <string name="recordingstartlength">00 : 00 : 00</string>
+
 </resources>

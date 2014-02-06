@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:background="@drawable/background"
     android:orientation="vertical" >
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="588dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="55dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/obj_background"
         android:orientation="vertical" >
 
         <ImageButton
-            android:id="@+id/ObjectPhotoBtn"
+            android:id="@+id/objectPhotoBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="36dp"
+            android:layout_marginLeft="48dp"
             android:layout_marginRight="45dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="45dp"
             android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
             android:contentDescription="@string/obj_photo_description"
             android:scaleType="matrix"
             android:src="@drawable/photo_holder" />
@@ -35,11 +36,14 @@
             android:background="@drawable/text_field_backgroung" >
 
             <EditText
-                android:id="@+id/MemNameTxt"
+                android:id="@+id/memNameTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@android:color/transparent"
                 android:ems="10"
-                android:hint="@string/memory_name" />
+                android:hint="@string/memory_name"
+                android:inputType="textCapWords" />
 
         </FrameLayout>
 
@@ -52,11 +56,14 @@
             android:background="@drawable/text_field_backgroung" >
 
             <EditText
-                android:id="@+id/LocationTxt"
+                android:id="@+id/locationTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@android:color/transparent"
                 android:ems="10"
-                android:hint="@string/location" >
+                android:hint="@string/location"
+                android:inputType="text" >
 
                 <requestFocus />
             </EditText>
@@ -72,9 +79,11 @@
             android:background="@drawable/text_field_backgroung" >
 
             <EditText
-                android:id="@+id/editText1"
+                android:id="@+id/dateTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@android:color/transparent"
                 android:ems="10"
                 android:hint="@string/date_year"
                 android:inputType="date" />
@@ -88,22 +97,43 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginTop="25dp" >
+        android:layout_marginTop="45dp"
+        android:paddingRight="15dp" >
 
         <ImageButton
             android:id="@+id/recordBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/recordBtn"
             android:scaleType="matrix"
             android:src="@drawable/speak" />
 
-        <EditText
-            android:id="@+id/editText2"
+        <TextView
+            android:id="@+id/recordTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:clickable="false"
+            android:contentDescription="@string/recordingLength"
+            android:inputType="none"
+            android:lines="1"
+            android:paddingLeft="48dp"
+            android:paddingRight="30dp"
+            android:paddingTop="18dp"
+            android:text="@string/recordingstartlength"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="60sp" />
+
+        <ImageButton
+            android:id="@+id/playbackBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:ems="10"
-            android:inputType="time" />
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/playbackBtn"
+            android:src="@drawable/create_playback" />
 
     </LinearLayout>
 
