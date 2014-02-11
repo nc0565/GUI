@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cover"
+    android:orientation="vertical"
+    android:paddingBottom="35dp"
+    android:paddingLeft="55dp"
+    android:paddingRight="30dp"
+    android:paddingTop="30dp"
+    android:weightSum="2.0" >
+
+    <ImageButton
+        android:id="@+id/recordBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/recordIntBtn"
+        android:paddingBottom="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/coverRecord" />
+
+    <ImageButton
+        android:id="@+id/remeberBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/rememberIntBtn"
+        android:paddingTop="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/coverRemeber" />
+
+</LinearLayout>
