@@ -18,4 +18,8 @@
 
     <string name="recordingstartlength">00 : 00 : 00</string>
 
+    <string name="recordIntBtn">Record Interface Button</string>
+
+    <string name="rememberIntBtn">Remember Interface Button</string>
+
 </resources>
