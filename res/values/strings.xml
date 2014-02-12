@@ -22,4 +22,8 @@
 
     <string name="rememberIntBtn">Remember Interface Button</string>
 
+    <string name="recordBtnText">Record</string>
+
+    <string name="playbackBtnText">Playback</string>
+
 </resources>

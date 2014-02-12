@@ -10,7 +10,7 @@
         android:layout_height="588dp"
         android:layout_marginLeft="35dp"
         android:layout_marginRight="55dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="35dp"
         android:background="@drawable/objbackground"
         android:orientation="vertical" >
 
@@ -97,44 +97,61 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="20dp"
         android:paddingRight="15dp" >
 
-        <ImageButton
+        <Button
             android:id="@+id/recordBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/recordBtn"
+            android:drawableTop="@drawable/speak"
             android:scaleType="matrix"
-            android:src="@drawable/speak" />
+            android:text="@string/recordBtnText"
+            android:textSize="28sp" />
 
         <TextView
             android:id="@+id/recordTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_weight="4"
             android:clickable="false"
             android:contentDescription="@string/recordingLength"
             android:inputType="none"
             android:lines="1"
-            android:paddingLeft="48dp"
-            android:paddingRight="30dp"
-            android:paddingTop="18dp"
+            android:paddingLeft="28dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
             android:text="@string/recordingstartlength"
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="60sp" />
 
-        <ImageButton
+        <Button
             android:id="@+id/playbackBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@android:color/transparent"
             android:contentDescription="@string/playbackBtn"
-            android:src="@drawable/createplayback" />
+            android:drawableTop="@drawable/createplayback"
+            android:text="@string/playbackBtnText"
+            android:textSize="25sp" />
 
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="22dp"
+        android:layout_marginTop="-45dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/createDone" />
 
 </LinearLayout>
